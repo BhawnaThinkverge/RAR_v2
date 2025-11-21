@@ -19,7 +19,7 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 # ==================== SECTOR DATA PATHS =======================================================================================================
 SECTOR_PATHS = {
-    "Manufacturing": r"C:\Users\JaswanthPalla\Desktop\VS  Code\ProbBid\Codebase\tester_1_20-08-2025\RAR-V1\Manufacturing_Sector 1.xlsx",
+    "Manufacturing": r"Manufacturing_Sector 1.xlsx",
     "Cyber Security": None,
     "Others": None
 }
@@ -407,4 +407,5 @@ with col2:
         st.info("Select a tool and persona, then click **Generate Report** to see the output!")
 
 st.sidebar.success("Persona-tailored structured reports ready!")
+
 
