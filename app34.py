@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain.callbacks import get_openai_callback
+from langchain_community.callbacks import get_openai_callback
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, List, Dict
 import json
@@ -407,3 +407,4 @@ with col2:
         st.info("Select a tool and persona, then click **Generate Report** to see the output!")
 
 st.sidebar.success("Persona-tailored structured reports ready!")
+
