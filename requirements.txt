@@ -3,7 +3,8 @@ streamlit
 python-dotenv
 langchain-openai
 langchain-core
-langchain
+langchain-community
 langgraph
 python-docx
 openpyxl
+
