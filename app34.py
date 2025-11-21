@@ -14,6 +14,11 @@ from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from io import BytesIO
 
+try:
+    from exceptions import PendingDeprecationWarning
+except ImportError:
+    import exceptions
+    exceptions.PendingDeprecationWarning = DeprecationWarning
 load_dotenv()
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
@@ -408,3 +413,4 @@ with col2:
 
 
 st.sidebar.success("Persona-tailored structured reports ready!")
+
