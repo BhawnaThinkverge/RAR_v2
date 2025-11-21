@@ -1,12 +1,9 @@
-streamlit
 pandas
-openpyxl
+streamlit
 python-dotenv
-langchain
 langchain-openai
 langchain-core
-langchain-community
+langchain
 langgraph
-openai
-docx
-tiktoken
+python-docx
+openpyxl
